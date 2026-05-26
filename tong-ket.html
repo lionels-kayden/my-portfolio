@@ -1,0 +1,257 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Báo cáo tổng kết và phản tư học phần Nhập môn Công nghệ số & Ứng dụng AI của Nguyễn Quang Thắng - Sinh viên K70 Điện tử Viễn thông Đại học Công nghệ.">
+    <title>Tổng kết Môn học | Nguyễn Quang Thắng</title>
+    <link rel="icon" type="image/x-icon" href="assets/images/avatar.jpg">
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website">
+    <meta property="og:url" content="https://lionels-kayden.github.io/tong-ket.html">
+    <meta property="og:title" content="Tổng kết Môn học | Digital Portfolio | Nguyễn Quang Thắng">
+    <meta property="og:description" content="Báo cáo tổng kết và phản tư học phần Nhập môn Công nghệ số & Ứng dụng AI của Nguyễn Quang Thắng - Sinh viên K70 Điện tử Viễn thông Đại học Công nghệ.">
+    <meta property="og:image" content="https://via.placeholder.com/1200x630/0f111a/00f2fe?text=Nguyen+Quang+Thang+Portfolio">
+        <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+    <!-- CSS Style Link -->
+    <link rel="stylesheet" href="css/style.css">
+    <!-- FontAwesome Icons for Summary Page -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<body class="page-fade-in">
+    <!-- Background Elements -->
+    <div class="glow-orb orb-1"></div>
+    <div class="glow-orb orb-2"></div>
+
+    <!-- Header & Navigation -->
+    <header class="header" id="header">
+        <nav class="navbar" id="navbar">
+            <a href="index.html" class="logo" id="logoLink">Digital Portfolio</a>
+            
+            <div class="hamburger" id="navToggleBtn" aria-label="Toggle Navigation Menu">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+
+            <ul class="nav-menu" id="navMenu">
+                <li><a href="index.html" class="nav-link" id="navHome">Trang chủ</a></li>
+                <li><a href="about.html" class="nav-link" id="navAbout">Về tôi</a></li>
+                <li><a href="journey.html" class="nav-link" id="navJourney">Hành trình học tập</a></li>
+                <li><a href="skills.html" class="nav-link" id="navSkills">Kỹ năng</a></li>
+                <li><a href="contact.html" class="nav-link" id="navContact">Liên hệ</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <!-- Main Container -->
+    <main class="container">
+        <!-- Hero Section (Cyber Minimalist, căn giữa, trong suốt) -->
+        <section class="lesson-hero" id="lessonHero">
+            <div class="subtitle" id="lessonHeroSubtitle">MÔN HỌC: CÔNG NGHỆ SỐ (CNS)</div>
+            <h1 id="lessonHeroTitle">Tổng kết Môn học</h1>
+            <p id="lessonHeroDesc">Báo cáo tổng kết và phản tư học phần</p>
+        </section>
+        <div class="neon-divider" id="lessonDivider"></div>
+
+        <!-- Custom CSS for Summary Page -->
+        <style>
+            .wide-container {
+                max-width: 1000px !important;
+                width: 100%;
+                margin: 0 auto;
+            }
+            .summary-section {
+                background: var(--bg-card);
+                border: 1px solid rgba(0, 242, 254, 0.2);
+                border-radius: var(--border-radius);
+                padding: 3.5rem 3rem;
+                position: relative;
+                overflow: hidden;
+                transition: var(--transition-smooth);
+                box-shadow: 0 10px 30px -10px var(--primary-glow);
+            }
+            .summary-section::after {
+                content: '';
+                position: absolute;
+                top: 0;
+                right: 0;
+                width: 250px;
+                height: 250px;
+                background: radial-gradient(circle, rgba(0, 242, 254, 0.05) 0%, transparent 70%);
+                pointer-events: none;
+            }
+            .summary-section:hover {
+                border-color: var(--primary);
+                background: var(--bg-card-hover);
+                box-shadow: 0 15px 40px -10px var(--primary-glow), 0 0 25px rgba(0, 242, 254, 0.25);
+            }
+            .summary-section h2 {
+                font-size: 2rem;
+                color: var(--primary);
+                margin-bottom: 1.5rem;
+                font-family: var(--font-heading);
+                letter-spacing: 0.05em;
+                display: flex;
+                align-items: center;
+                gap: 0.75rem;
+                text-shadow: 0 0 10px var(--primary-glow);
+            }
+            .summary-section h2 i {
+                font-size: 1.8rem;
+                color: var(--primary);
+                filter: drop-shadow(0 0 8px var(--primary-glow));
+            }
+            .intro-text {
+                font-size: 1.1rem;
+                color: var(--text-main);
+                line-height: 1.7;
+                text-align: justify;
+                margin-bottom: 3.5rem;
+                border-left: 4px solid var(--primary);
+                padding-left: 1.5rem;
+            }
+            .summary-grid {
+                display: grid;
+                grid-template-columns: 1fr;
+                gap: 2.5rem;
+            }
+            .summary-card-inner {
+                background: rgba(255, 255, 255, 0.015);
+                border: 1px solid var(--border-dim);
+                border-radius: 10px;
+                padding: 2.5rem;
+                transition: var(--transition-smooth);
+                box-shadow: inset 0 0 15px rgba(0, 242, 254, 0.01);
+            }
+            .summary-card-inner:hover {
+                background: rgba(255, 255, 255, 0.03);
+                border-color: var(--border-focus);
+                transform: translateY(-2px);
+                box-shadow: 0 8px 25px rgba(0, 242, 254, 0.05);
+            }
+            .summary-card-inner h3 {
+                font-size: 1.35rem;
+                color: var(--primary);
+                margin-bottom: 1.25rem;
+                font-family: var(--font-heading);
+                letter-spacing: 0.05em;
+                display: flex;
+                align-items: center;
+                gap: 0.75rem;
+                border-bottom: 1px solid rgba(0, 242, 254, 0.15);
+                padding-bottom: 0.75rem;
+            }
+            .summary-card-inner h3 i {
+                font-size: 1.15rem;
+                color: var(--primary);
+                filter: drop-shadow(0 0 5px var(--primary-glow));
+            }
+            .summary-card-inner p {
+                font-size: 1.05rem;
+                color: var(--text-muted);
+                line-height: 1.65;
+                text-align: justify;
+                margin-bottom: 1.25rem;
+            }
+            .summary-card-inner p:last-child {
+                margin-bottom: 0;
+            }
+            @media (max-width: 768px) {
+                .summary-section {
+                    padding: 2rem 1.5rem;
+                }
+                .summary-card-inner {
+                    padding: 1.5rem;
+                }
+                .summary-section h2 {
+                    font-size: 1.5rem;
+                }
+                .summary-card-inner h3 {
+                    font-size: 1.15rem;
+                }
+            }
+        </style>
+
+        <!-- Main Content (Wide Card Layout) -->
+        <div class="article-container wide-container" id="lessonContent">
+            <section class="summary-section">
+                <h2><i class="fas fa-graduation-cap"></i> BÁO CÁO TỔNG KẾT VÀ PHẢN TƯ HỌC PHẦN</h2>
+                <p class="intro-text">Bước vào môi trường đại học tại UET - VNU với tư cách là một sinh viên khóa K70 thuộc ngành Điện tử Viễn thông, học phần "Nhập môn Công nghệ số và Ứng dụng AI" đã trở thành bệ phóng tư duy quan trọng trong kỷ nguyên số. Chuỗi bài tập thành phần từ Bài 1 đến Bài 6 đã tạo cơ hội để bản thân trải nghiệm, nhìn nhận lại cách thức tương tác với công nghệ và từng bước định hình một phương pháp làm việc khoa học, hệ thống.</p>
+
+                <div class="summary-grid">
+                    <div class="summary-card-inner">
+                        <h3><i class="fas fa-history"></i> 1. Nhìn lại: Quá trình chuyển đổi tư duy số và quản lý tri thức</h3>
+                        <p>Trước khi tiếp cận học phần này, việc tương tác với máy tính hầu hết đều diễn ra theo bản năng. Các tệp tin học tập thường được lưu trữ rời rạc, thiếu quy hoạch, dẫn đến việc mất nhiều thời gian tìm kiếm lại tài liệu trong những tình huống khẩn cấp. Việc thiết lập lại cấu trúc thư mục tối ưu và áp dụng quy tắc đặt tên tệp nghiêm ngặt trong Bài tập 1 đã giải quyết triệt để bài toán này, biến dữ liệu thô thành một hệ thống tri thức cá nhân có thể truy cập tức thì.</p>
+                        <p>Sự chuyển biến mạnh mẽ tiếp theo nằm ở kỹ năng khai thác và thẩm định thông tin số. Giữa một đại dương thông tin bùng nổ, việc chỉ gõ từ khóa đơn giản vào Google là hoàn toàn không đủ. Việc làm chủ các toán tử tìm kiếm nâng cao và áp dụng bộ tiêu chí CRAAP đã giúp bản thân biết cách "soi" một nguồn tin học thuật, sàng lọc ra những tài liệu thực sự đáng tin cậy từ các cơ sở dữ liệu uy tín để phục vụ cho việc học tập lâu dài.</p>
+                    </div>
+
+                    <div class="summary-card-inner">
+                        <h3><i class="fas fa-brain"></i> 2. Rút ra: Đồng sáng tạo cùng AI và Giữ vững liêm chính học thuật</h3>
+                        <p>Sự xuất hiện của Trí tuệ nhân tạo tạo sinh (Generative AI) mang đến những tiềm năng phi thường nhưng cũng đặt ra những thách thức lớn về mặt nhận thức. Qua quá trình thực hành kỹ nghệ ra lệnh (Prompt Engineering), bản thân rút ra bài học sâu sắc rằng AI chỉ đóng vai trò là một người trợ lý ảo đồng hành, chứ không bao giờ có thể làm thay phần việc cốt lõi của con người. Do các mô hình ngôn ngữ lớn luôn tiềm ẩn nguy cơ xảy ra hiện tượng "ảo giác" — tự bịa đặt thông tin — nên tư duy phản biện và hành động kiểm chứng lại nguồn tài liệu gốc là bắt buộc.</p>
+                        <p>Quan trọng hơn cả, liêm chính học thuật chính là xương sống bảo vệ giá trị thực chất của giáo dục. Việc lạm dụng sao chép nguyên văn nội dung do AI tạo ra mà không có sự diễn giải, đối chiếu và trích dẫn quy chuẩn không chỉ vi phạm về mặt đạo đức mà còn làm thui chột năng lực tư duy của bản thân. Song song với đó, nhận thức về "dấu chân số" (digital footprint) nhắc nhở bản thân rằng mỗi hành động, mỗi dữ liệu để lại trên không gian mạng đều định hình nên danh tính số của cá nhân, đòi hỏi một thái độ cẩn trọng và có trách nhiệm.</p>
+                    </div>
+
+                    <div class="summary-card-inner">
+                        <h3><i class="fas fa-rocket"></i> 3. Hướng tới: Kiến tạo tương lai số và Phát triển dài hạn</h3>
+                        <p>Đối với một sinh viên theo đuổi chuyên ngành Điện tử Viễn thông và hướng đi Lập trình Nhúng, IoT, những kỹ năng và tư duy hệ thống tích lũy từ môn học này có giá trị bổ trợ cực kỳ to lớn. Việc tối ưu hóa cấu trúc mã nguồn Python, quản lý các tệp cấu hình thiết bị phần cứng, hay việc phối hợp với các AI Agent (như Cursor, Windsurf) để tìm lỗi mã nguồn và tối ưu hóa hệ thống đều là sự tiếp nối trực tiếp của năng lực quản lý số và kỹ năng viết câu lệnh thông minh đã được rèn luyện.</p>
+                        <p>Mô hình thiết kế trang Portfolio cá nhân theo hướng đa nhiệm và mở rộng cho thấy tầm nhìn dài hạn. Trang web không dừng lại ở khuôn khổ một bài tập lớn để lấy điểm số trực quan, mà sẽ tiếp tục phát triển thành một cuốn nhật ký công nghệ, một "dấu ấn số" chuyên nghiệp để lưu trữ từng cột mốc nghiên cứu, từng dự án mạch điện, hệ thống IoT hay các sản phẩm phần mềm trong suốt những năm tháng học tập tại UET - VNU và hành trình nghề nghiệp tương lai.</p>
+                    </div>
+                </div>
+            </section>
+
+            <!-- Navigation back -->
+            <div style="margin-top: 3.5rem; text-align: center;">
+                <a href="cns.html" class="hero-btn outline" id="btnBackToCNS">← Quay lại danh mục CNS</a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer" id="footer">
+        <div class="footer-content" id="footerContent">
+            <div class="footer-left" id="footerLeft">
+                <p id="copyright">© 2026 Nguyễn Quang Thắng. Môn học Nhập môn Công nghệ số & Ứng dụng AI.</p>
+            </div>
+            <div class="footer-contacts" id="footerContacts">
+                <a href="mailto:nguyenquangthang8827@gmail.com" class="contact-link" id="contactEmail">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z" />
+                        <polyline points="22,6 12,13 2,6" />
+                    </svg>
+                    Email
+                </a>
+                <a href="tel:0333124872" class="contact-link" id="contactZalo">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z" />
+                    </svg>
+                    Zalo (0333124872)
+                </a>
+                <a href="https://github.com/lionels-kayden" target="_blank" rel="noopener noreferrer" class="contact-link" id="contactGithub">
+                    <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                        <path d="M9 19c-5 1.5-5-2.5-7-3m14 6v-3.87a3.37 3.37 0 0 0-.94-2.61c3.14-.35 6.44-1.54 6.44-7A5.44 5.44 0 0 0 20 4.77 5.07 5.07 0 0 0 19.91 1S18.73.65 16 2.48a13.38 13.38 0 0 0-7 0C6.27.65 5.09 1 5.09 1A5.07 5.07 0 0 0 5 4.77a5.44 5.44 0 0 0-1.5 3.78c0 5.42 3.3 6.61 6.44 7A3.37 3.37 0 0 0 9 18.13V22" />
+                    </svg>
+                    Github
+                </a>
+            </div>
+        </div>
+    </footer>
+
+    <div id="pdfModal" class="pdf-modal">
+        <div id="modalContent" class="modal-content">
+            <span class="close-btn" onclick="closePdfAnimated()">&times;</span>
+            <iframe id="pdfViewer" src="" width="100%" height="100%" frameborder="0"></iframe>
+        </div>
+    </div>
+
+    <!-- Back to Top Button -->
+    <button class="back-to-top" id="backToTop" title="Cuộn về đầu trang">&#8593;</button>
+
+    <!-- Main JavaScript Link -->
+    <script src="js/main.js"></script>
+</body>
+</html>

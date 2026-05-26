@@ -25,8 +25,8 @@ document.addEventListener('DOMContentLoaded', () => {
         }
     });
 
-    // Special match for sub-pages (cns.html or bai1.html) -> highlight "Hành trình học tập" (journey.html)
-    if (currentPath.includes('cns.html') || currentPath.includes('bai')) {
+    // Special match for sub-pages (cns.html, bai1.html, tong-ket.html) -> highlight "Hành trình học tập" (journey.html)
+    if (currentPath.includes('cns.html') || currentPath.includes('bai') || currentPath.includes('tong-ket')) {
         navLinks.forEach(link => {
             if (link.getAttribute('href') === 'journey.html') {
                 link.classList.add('active');
@@ -48,8 +48,8 @@ document.addEventListener('DOMContentLoaded', () => {
             }
         });
 
-        // Special match for local files direct open sub-pages (cns.html or bai1.html)
-        if (window.location.href.includes('cns.html') || window.location.href.includes('bai')) {
+        // Special match for local files direct open sub-pages (cns.html, bai1.html, tong-ket.html)
+        if (window.location.href.includes('cns.html') || window.location.href.includes('bai') || window.location.href.includes('tong-ket')) {
             navLinks.forEach(link => {
                 if (link.getAttribute('href') === 'journey.html') {
                     link.classList.add('active');

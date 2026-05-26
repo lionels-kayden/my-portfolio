@@ -108,7 +108,7 @@
             gap: 0.75rem;
         }
 
-        .menu-btn, .menu-back-btn {
+        .menu-btn {
             display: flex;
             align-items: center;
             gap: 0.9rem;
@@ -127,16 +127,11 @@
             user-select: none;
         }
 
-        .menu-btn:hover, .menu-back-btn:hover {
+        .menu-btn:hover {
             background: rgba(0, 242, 254, 0.04);
             color: var(--text-main);
             border-color: rgba(0, 242, 254, 0.25);
             box-shadow: 0 0 12px rgba(0, 242, 254, 0.05);
-        }
-
-        .menu-back-btn {
-            margin-bottom: 15px;
-            border-bottom: 1px solid rgba(0, 242, 254, 0.2) !important;
         }
 
         .menu-btn.active {
@@ -147,7 +142,7 @@
             text-shadow: 0 0 8px var(--primary-glow);
         }
 
-        .menu-btn .btn-icon, .menu-back-btn .btn-icon {
+        .menu-btn .btn-icon {
             font-size: 1rem;
             width: 20px;
             text-align: center;
@@ -156,7 +151,7 @@
             justify-content: center;
         }
 
-        .menu-btn .btn-label, .menu-back-btn .btn-label {
+        .menu-btn .btn-label {
             flex: 1;
             white-space: nowrap;
             overflow: hidden;
@@ -469,38 +464,31 @@
         <aside class="app-sidebar">
             <h3 class="sidebar-title">Danh mục bài học</h3>
             <ul class="menu-list">
-                <!-- Back to Journey Button -->
-                <li>
-                    <a href="journey.html" class="menu-back-btn">
-                        <span class="btn-icon"><i class="fas fa-arrow-left"></i></span>
-                        <span class="btn-label" title="Trở về Hành trình">Trở về Hành trình</span>
-                    </a>
-                </li>
-                <li class="menu-btn active" data-tab="tab-bai1" data-target="#bai1">
+                <li class="menu-btn active" data-tab="tab-bai1">
                     <span class="btn-icon"><i class="fas fa-desktop"></i></span>
                     <span class="btn-label" title="Bài 1: Tổng quan máy tính">Bài 1: Tổng quan máy tính</span>
                 </li>
-                <li class="menu-btn" data-tab="tab-bai2" data-target="#bai2">
+                <li class="menu-btn" data-tab="tab-bai2">
                     <span class="btn-icon"><i class="fas fa-search"></i></span>
                     <span class="btn-label" title="Bài 2: Khai thác dữ liệu">Bài 2: Khai thác dữ liệu</span>
                 </li>
-                <li class="menu-btn" data-tab="tab-bai3" data-target="#bai3">
+                <li class="menu-btn" data-tab="tab-bai3">
                     <span class="btn-icon"><i class="fas fa-brain"></i></span>
                     <span class="btn-label" title="Bài 3: Tổng quan về AI">Bài 3: Tổng quan về AI</span>
                 </li>
-                <li class="menu-btn" data-tab="tab-bai4" data-target="#bai4">
+                <li class="menu-btn" data-tab="tab-bai4">
                     <span class="btn-icon"><i class="fas fa-users"></i></span>
                     <span class="btn-label" title="Bài 4: Giao tiếp & Hợp tác">Bài 4: Giao tiếp & Hợp tác</span>
                 </li>
-                <li class="menu-btn" data-tab="tab-bai5" data-target="#bai5">
+                <li class="menu-btn" data-tab="tab-bai5">
                     <span class="btn-icon"><i class="fas fa-pen-fancy"></i></span>
                     <span class="btn-label" title="Bài 5: Sáng tạo nội dung">Bài 5: Sáng tạo nội dung</span>
                 </li>
-                <li class="menu-btn" data-tab="tab-bai6" data-target="#bai6">
+                <li class="menu-btn" data-tab="tab-bai6">
                     <span class="btn-icon"><i class="fas fa-shield-alt"></i></span>
                     <span class="btn-label" title="Bài 6: An toàn & Liêm chính">Bài 6: An toàn & Liêm chính</span>
                 </li>
-                <li class="menu-btn" data-tab="tab-tongket" data-target="#tongket">
+                <li class="menu-btn" data-tab="tab-tongket">
                     <span class="btn-icon"><i class="fas fa-graduation-cap"></i></span>
                     <span class="btn-label" title="Tổng kết môn học">Tổng kết Môn học</span>
                 </li>
@@ -1247,18 +1235,6 @@
                     }
                 });
             });
-        });
-
-        // XỬ LÝ LIÊN KẾT THÔNG MINH TỪ TRANG JOURNEY (URL HASH LINK)
-        window.addEventListener('DOMContentLoaded', () => {
-            const hash = window.location.hash;
-            if (hash) {
-                // Tìm tab tương ứng dựa trên hash trên URL (ví dụ: cns.html#bai3)
-                const targetTab = document.querySelector(`[data-target="${hash}"]`);
-                if (targetTab) {
-                    targetTab.click(); // Tự động kích hoạt bấm vào tab đó
-                }
-            }
         });
     </script>
 </body>

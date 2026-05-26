@@ -6,7 +6,7 @@
 */
 
 /* Google Fonts Import */
-@import url('https://fonts.googleapis.com/css2?family=Orbitron:wght@400;500;700;900&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
 
 /* CSS Variables */
 :root {
@@ -28,8 +28,8 @@
     --text-muted: #94a3b8;
     --text-dark: #64748b;
     
-    --font-heading: 'Orbitron', system-ui, sans-serif;
-    --font-body: 'Plus Jakarta Sans', system-ui, sans-serif;
+    --font-heading: 'Inter', system-ui, sans-serif;
+    --font-body: 'Inter', system-ui, sans-serif;
     
     --transition-fast: 0.2s cubic-bezier(0.4, 0, 0.2, 1);
     --transition-smooth: 0.4s cubic-bezier(0.4, 0, 0.2, 1);
@@ -53,13 +53,23 @@ html, body {
 body {
     background-color: #0d0d12;
     color: var(--text-main);
-    font-family: var(--font-body);
+    font-family: 'Inter', sans-serif !important;
     line-height: 1.6;
     overflow-x: hidden;
     position: relative;
     display: grid;
     grid-template-rows: auto 1fr auto;
     min-height: 100vh;
+}
+
+/* Ensure typography and elements use Inter and prevent font overrides */
+h1, h2, h3, h4, h5, h6, p, a, button, input {
+    font-family: 'Inter', sans-serif !important;
+}
+
+/* Protect FontAwesome from using Inter font */
+.fas, .fab, .far, .fa-solid, .fa-regular, .fa-brands, .fa {
+    font-family: 'Font Awesome 6 Free', 'Font Awesome 6 Brands', 'FontAwesome', sans-serif !important;
 }
 
 /* Background Cyber Grid Effect */
@@ -165,6 +175,7 @@ a {
     font-weight: 900;
     background: linear-gradient(135deg, var(--primary), var(--secondary));
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     display: flex;
     align-items: center;
@@ -280,6 +291,7 @@ a {
 .hero-title span {
     background: linear-gradient(135deg, var(--primary) 0%, var(--secondary) 100%);
     -webkit-background-clip: text;
+    background-clip: text;
     -webkit-text-fill-color: transparent;
     text-shadow: 0 0 40px rgba(0, 242, 254, 0.1);
     position: relative;
